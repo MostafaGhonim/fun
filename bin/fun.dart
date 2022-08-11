@@ -1,15 +1,12 @@
-import 'dart:io';
-import 'dart:math';
-import 'package:fun/fun.dart';
-
+import 'package:fun/RandomNumberGuess.dart';
 
 
 main() {
  int random = genratenumberforgusse(10);
- int user;
+ int userin;
  do{
-  user = askusergusse();
-  var result = compear(user, random);
+  userin = askusergusse();
+  var result = compear(userin, random);
   print(result);
- }while(user != random);
+ }while(userin != random);
 }
