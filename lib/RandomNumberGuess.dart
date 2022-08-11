@@ -20,12 +20,18 @@ gussnum(int inputnum){
   print("you got the number!! the number is $rand");
 }
 
-int genratenumberforgusse(int num){
+int genratenumberforgusse(int x){
   Random randomnumber = Random();
-  return randomnumber.nextInt(num);
+  return randomnumber.nextInt(x);
+}
+int Howguess(){
+  print("enter the range to guess :");
+  var HowMuch;
+  HowMuch = stdin.readLineSync();
+  HowMuch = int.parse(HowMuch);
+  return HowMuch;
 }
 int askusergusse(){
-
   print("Enter your guess");
   var guess;
   guess= stdin.readLineSync();
@@ -42,4 +48,6 @@ String compear(int userin , int random){
   else{
     return "You are guessed it the number is $random";
   }
+
 }
+

@@ -1,8 +1,10 @@
+
 import 'package:fun/RandomNumberGuess.dart';
 
 
 main() {
- int random = genratenumberforgusse(10);
+int askforrange = Howguess();
+ int random = genratenumberforgusse(askforrange);
  int userin;
  do{
   userin = askusergusse();
